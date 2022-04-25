@@ -1,0 +1,15 @@
+<form [formGroup]="addMovieFormGroup" (submit)="submitMovie()">
+    <div>
+        <label>Title:</label>
+        <input type="text" formControlName="title">
+    </div>
+
+    <div>
+        <label>Actor:</label>
+        <input type="text" formControlName="actor">
+    </div>
+
+    <div>
+        <button type="submit">Add Movie</button>
+    </div>
+</form>

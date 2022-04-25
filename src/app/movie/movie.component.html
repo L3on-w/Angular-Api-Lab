@@ -1,0 +1,9 @@
+<div *ngIf="movie$ | async as movie; else gettingMovie">
+    <h1>Title: {{movie.title}}</h1>
+    <h1>Actor: {{movie.actor}}</h1>
+</div>
+
+<ng-template #gettingMovie>
+    <p>getting movie....</p>
+</ng-template>
+
